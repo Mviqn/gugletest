@@ -1,0 +1,27 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "src/main.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/pepega-icon-128.png",
+      "default_popup": "src/popup/popup.html",
+      "default_title": "Popup"
+   },
+   "content_scripts": [ {
+      "js": [ "src/content/content.js" ],
+      "matches": [ "https://*/*" ]
+   } ],
+   "description": "Catch and battle Pepegas across the internet!",
+   "homepage_url": "https://github.com/Alycse",
+   "icons": {
+      "128": "icons/pepega-icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhQQAKf+Kf9EfqOF5Fz7ipqdvTMGQVDfNRG00LNt8fH2+6cVJKwR17wehrV1WwO41G55SnBZ/Qa8exMBNy+XVuKtU4tzA1A/QgKTRKgiwXXcJ9tyn8UqxEC+F8Zi6XML24xDN73yasPs1En+sdosrCIAqM8Y3vWjAFqZOs6PzIE8Quk0FGCKP8U4XQv86dBTJf1oVoXjsuV5qzLJ4jiCRf+y/gAN21Tli2M1hMDk64aoOUmFTGcH/CnmP9dDYsHR7+ti4GJ2aDxQTErSRSV/wyx/3AC3ziuwI8eHBx9t1r8FK0jZHdgaQ6OJO5i/H6ka2ac+PJTA5SgA6JGBB9OVw1QIDAQAB",
+   "manifest_version": 2,
+   "name": "Pepega Catch!",
+   "permissions": [ "tabs", "storage", "notifications", "idle" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9.0",
+   "web_accessible_resources": [ "images/*", "src/pepega/*" ]
+}
